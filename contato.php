@@ -5,15 +5,19 @@ include "header.php";
     <div class="row">
         <div class="col-12">
             <h1>Fale conosco</h1>
-            <div class="">
+            <div class="formulario" id="formCadastro">
                 <form action="">
                     <div>
-                        <label for="nome">Digite seu nome</label>
+                        <label for="nome">Digite seu nome </label>
                         <input type="text" name="nome" id="nome">
                     </div>
                     <div>
                         <label for="email">Digite seu e-mail</label>
-                        <input type="text" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="cpf">Digite seu cpf</label>
+                        <input type="number" name="cpf" id="cpf" required>
                     </div>
                     <input type="submit" value="Enviar">
                 </form>
